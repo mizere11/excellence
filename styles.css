@@ -1,0 +1,241 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+header {
+    background-color: #1a73e8;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+.logo {
+    font-size: 1.5rem;
+    color: white;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav li {
+    margin-left: 1rem;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+.course-category ul {
+    list-style-type: none;
+    padding-left: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.course-category li {
+    background-color: #f5f5f5;
+    padding: 1rem;
+    border-radius: 4px;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    flex-basis: calc(33.333% - 1rem);
+    box-sizing: border-box;
+}
+
+.course-category li:hover {
+    background-color: #1a73e8;
+    color: white;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .course-category li {
+        flex-basis: calc(50% - 1rem);
+    }
+}
+
+@media (max-width: 480px) {
+    .course-category li {
+        flex-basis: 100%;
+    }
+}
+
+main {
+    padding: 2rem;
+}
+
+section {
+    display: none;
+}
+
+section.active {
+    display: block;
+}
+
+h1, h2 {
+    color: #1a73e8;
+    margin-bottom: 1rem;
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: #1a73e8;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    margin-top: 1rem;
+}
+
+.btn:hover {
+    background-color: #1558b6;
+}
+
+footer {
+    background-color: #1a73e8;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+/* Courses Section */
+#courses {
+  padding: 2rem;
+}
+
+#courses h2 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+#courses ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 2rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+#courses li {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#courses li a {
+  display: block;
+  padding: 1rem;
+  text-decoration: none;
+  color: #333;
+}
+
+#courses li a:hover {
+  background-color: #f5f5f5;
+}
+
+#courses li h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+#courses li p {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  line-height: 1.5;
+  padding: 0 1rem;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.hero-image {
+    background-image: url('https://images.unsplash.com/photo-1452457750107-cd084dce177d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1401&q=80');
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.hero-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    z-index: 1;
+}
+
+h1 {
+    font-size: 2.5em;
+    font-weight: bold;
+    margin-bottom: 0.5em;
+}
+
+.animated-text {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #ffffff;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: movingText 10s linear infinite;
+}
+
+@keyframes movingText {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+    margin-top: 1em;
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.75em 1.5em;
+    background-color: #007BFF;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.btn:hover {
+    background-color: #0056B3;
+}
